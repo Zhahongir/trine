@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trine</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <a href="index.html" class="header__wrap__logo">
+                    <img src="icons/logo.svg" alt="logo" class="header__wrap__logo__icon">
+                </a>
+                <div class="header__wrap__nav">
+                    <ul class="header__wrap__nav__list">
+                        <li class="header__wrap__nav__list__item header__nav__catalog">
+                            <a class="header__wrap__nav__list__item__link">Каталог
+                                <img src="icons/arrow-down.svg" alt="icon" class="header__wrap__nav__list__item__link__icon">
+                            </a>
+                        </li>
+                        <li class="header__wrap__nav__list__item"><a href="about-us.html" class="header__wrap__nav__list__item__link">О нас</a></li>
+                        <li class="header__wrap__nav__list__item"><a href="#" class="header__wrap__nav__list__item__link">Доставка и оплата</a></li>
+                        <li class="header__wrap__nav__list__item"><a href="#" class="header__wrap__nav__list__item__link">Отзывы</a></li>
+                        <li class="header__wrap__nav__list__item"><a href="#" class="header__wrap__nav__list__item__link">Контакты</a></li>
+                    </ul>
+                </div>
+                <button class="header__wrap__cart">
+                    Корзина <span class="brackets">(</span><span class="count">0</span><span class="brackets">)</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <img src="icons/logo-small.svg" alt="logo" class="intro__logo">
+            <div class="intro__wrap">
+                <img src="images/promo-1.webp" alt="image" class="intro__wrap__image-left">
+                <div class="intro__wrap__content">
+                    <h1 class="intro__wrap__content__title">О бренде</h1>
+                    <img src="icons/logo.svg" alt="logo" class="intro__wrap__content__logo">
+                    <div class="intro__wrap__content__info">
+                        <p class="intro__wrap__content__info__description">Бренд Trine создан в Санкт-Петербурге в 2018 году. <br>
+                            Уникальный проект, где собраны сотни брендов парфюмерии и косметики со всего мира.</p>
+                        <p class="intro__wrap__content__info__description">На сайте представлена парфюмерия на распив. <br>
+                            Также вы можете заказать абсолютно любой полноразмерный <br>
+                            флакон парфюма, на складе находится более 50 000 позиций.</p>
+                    </div>
+                    <a href="index.html" class="intro__wrap__content__button">Перейти в каталог</a>
+                </div>
+                <img src="images/promo-2.webp" alt="image" class="intro__wrap__image-right">
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <h2 class="advantages__title">Почему выбирают нас?</h2>
+            <div class="advantages__wrap">
+                <div class="advantages__wrap__item">
+                    <div class="advantages__wrap__item__header">
+                        <div class="advantages__wrap__item__header__circle">
+                            <span class="advantages__wrap__item__header__circle__number">01</span>
+                        </div>
+                        <h3 class="advantages__wrap__item__header__title">Гарантия качества</h3>
+                    </div>
+                    <p class="advantages__wrap__item__description">В продаже только оригинальная парфюмерия и косметика от дистрибьютеров и проверенных поставщиков.</p>
+                </div>
+                <div class="advantages__wrap__item">
+                    <div class="advantages__wrap__item__header">
+                        <div class="advantages__wrap__item__header__circle">
+                            <span class="advantages__wrap__item__header__circle__number">02</span>
+                        </div>
+                        <h3 class="advantages__wrap__item__header__title">Удобная доставка</h3>
+                    </div>
+                    <p class="advantages__wrap__item__description">В любую точку России и мира: СДЕК, Boxberry, DPD, Pickpoint, почта России.</p>
+                </div>
+                <div class="advantages__wrap__item">
+                    <div class="advantages__wrap__item__header">
+                        <div class="advantages__wrap__item__header__circle">
+                            <span class="advantages__wrap__item__header__circle__number">03</span>
+                        </div>
+                        <h3 class="advantages__wrap__item__header__title">Гибкие варианты оплаты</h3>
+                    </div>
+                    <p class="advantages__wrap__item__description">Удобный способ оплаты на карту или наличными при получении.</p>
+                </div>
+                <div class="advantages__wrap__item">
+                    <div class="advantages__wrap__item__header">
+                        <div class="advantages__wrap__item__header__circle">
+                            <span class="advantages__wrap__item__header__circle__number">04</span>
+                        </div>
+                        <h3 class="advantages__wrap__item__header__title">Гарантия 5 дней</h3>
+                    </div>
+                    <p class="advantages__wrap__item__description">Возврат товара в течении 5 дней, если товар не понравился или не подошёл.</p>
+                </div>
+                <div class="advantages__wrap__item">
+                    <div class="advantages__wrap__item__header">
+                        <div class="advantages__wrap__item__header__circle">
+                            <span class="advantages__wrap__item__header__circle__number">05</span>
+                        </div>
+                        <h3 class="advantages__wrap__item__header__title">Минимальная рыночная цена</h3>
+                    </div>
+                    <p class="advantages__wrap__item__description">Самая минимальная цена на рынке, за счёт оптимизации расходов.</p>
+                </div>
+                <div class="advantages__wrap__item">
+                    <div class="advantages__wrap__item__header">
+                        <div class="advantages__wrap__item__header__circle">
+                            <span class="advantages__wrap__item__header__circle__number">06</span>
+                        </div>
+                        <h3 class="advantages__wrap__item__header__title">Еженедельные скидки до 50%</h3>
+                    </div>
+                    <p class="advantages__wrap__item__description">Каждую неделю проходят распродажи со скидкой до 50%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 class="faq__title">FAQ</h2>
+            <div class="faq__wrap">
+                <ul class="faq__wrap__list">
+                    <li class="faq__wrap__accardion">
+                        <button class="faq__wrap__accardion__control" aria-expanded="false">
+                            <div class="faq__wrap__accardion__control__header">
+                                <div class="faq__wrap__accardion__control__header__icon">?</div>
+                                <h3 class="faq__wrap__accardion__control__header__title">Что такое пробники/отливанты?</h3>
+                            </div>
+                            <div class="faq__wrap__accardion__control__button">
+                                <div class="faq__wrap__accardion__control__button__minus"></div>
+                                <div class="faq__wrap__accardion__control__button__plus"></div>
+                            </div>
+                        </button>
+                        <div class="faq__wrap__accardion__content" aria-hidden="true">
+                            <p class="faq__wrap__accardion__content__text">Пробник/отливант — это версия аромата в маленьком объёме. Полноразмерный флакон разливается в пробники — атомайзеры.</p>
+                        </div>
+                    </li>
+                    <li class="faq__wrap__accardion">
+                        <button class="faq__wrap__accardion__control" aria-expanded="false">
+                            <div class="faq__wrap__accardion__control__header">
+                                <div class="faq__wrap__accardion__control__header__icon">?</div>
+                                <h3 class="faq__wrap__accardion__control__header__title">Что делать, если я не знаю ароматов, <br>
+                                    но хочу сделать заказ?</h3>
+                            </div>
+                            <div class="faq__wrap__accardion__control__button">
+                                <div class="faq__wrap__accardion__control__button__minus"></div>
+                                <div class="faq__wrap__accardion__control__button__plus"></div>
+                            </div>
+                        </button>
+                        <div class="faq__wrap__accardion__content" aria-hidden="true">
+                            <p class="faq__wrap__accardion__content__text">1. Вы можете заказать пробник аромата по описанию.</p>
+                            <p class="faq__wrap__accardion__content__text">2. Заказать один из <a href="#">Aromo Box</a>, в котором 10 ароматов по 2ml. </p>
+                            <p class="faq__wrap__accardion__content__text">3. Написать нам свои предпочтения и мы поможем подобрать аромат.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <h2 class="reviews__title">Отзывы наших покупателей</h2>
+        </div>
+        <div class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="images/review-1.png" alt="review" class="splide__slide__photo">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="images/review-2.png" alt="review" class="splide__slide__photo">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="images/review-3.png" alt="review" class="splide__slide__photo">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="images/review-4.png" alt="review" class="splide__slide__photo">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="images/review-5.png" alt="review" class="splide__slide__photo">
+                    </li>
+                  </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <a href="index.html" class="footer__wrap__logo">
+                    <img src="icons/logo-small-footer.svg" alt="logo" class="footer__wrap__logo__icon">
+                </a>
+                <div class="footer__wrap__nav">
+                    <h5 class="footer__wrap__nav__title footer-title">Каталог</h5>
+                    <div class="footer__wrap__nav__content">
+                        <ul class="footer__wrap__nav__content__left">
+                            <li class="footer__wrap__nav__content__left__item"><a href="#" class="footer__wrap__nav__content__left__item__link">Новинки</a></li>
+                            <li class="footer__wrap__nav__content__left__item"><a href="#" class="footer__wrap__nav__content__left__item__link">Топ продаж</a></li>
+                            <li class="footer__wrap__nav__content__left__item"><a href="#" class="footer__wrap__nav__content__left__item__link">Для мужчин</a></li>
+                            <li class="footer__wrap__nav__content__left__item"><a href="#" class="footer__wrap__nav__content__left__item__link">Для женщин</a></li>
+                        </ul>
+                        <ul class="footer__wrap__nav__content__right">
+                            <li class="footer__wrap__nav__content__right__item"><a href="#" class="footer__wrap__nav__content__right__item__link">Ароматы Trine</a></li>
+                            <li class="footer__wrap__nav__content__right__item"><a href="#" class="footer__wrap__nav__content__right__item__link">Аромо Box</a></li>
+                            <li class="footer__wrap__nav__content__right__item"><a href="#" class="footer__wrap__nav__content__right__item__link">Сертификаты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__wrap__menu">
+                    <h5 class="footer__wrap__menu__title footer-title">Навигация</h5>
+                    <ul class="footer__wrap__menu__list">
+                        <li class="footer__wrap__menu__list__item"><a href="#" class="footer__wrap__menu__list__item__link">О нас</a></li>
+                        <li class="footer__wrap__menu__list__item"><a href="#" class="footer__wrap__menu__list__item__link">Доставка и оплата</a></li>
+                        <li class="footer__wrap__menu__list__item"><a href="#" class="footer__wrap__menu__list__item__link">Отзывы</a></li>
+                        <li class="footer__wrap__menu__list__item"><a href="#" class="footer__wrap__menu__list__item__link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__wrap__other">
+                    <h5 class="footer__wrap__other__title footer-title">Другое</h5>
+                    <ul class="footer__wrap__other__list">
+                        <li class="footer__wrap__other__list__item"><a href="#" class="footer__wrap__other__list__item__link">Оферта</a></li>
+                        <li class="footer__wrap__other__list__item"><a href="#" class="footer__wrap__other__list__item__link">Условия покупки</a></li>
+                        <li class="footer__wrap__other__list__item"><a href="#" class="footer__wrap__other__list__item__link">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <span class="footer__copyright__since">2023 © Trine</span>
+                <a href="https://t.me/zhahongir_web" target="_blank" class="footer__copyright__developer">Разработка @zhahongir_web</a>
+            </div>
+            <img src="icons/logo-footer.svg" alt="logo" class="footer__logo">
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <div class="header__dropdown">
+        <div class="header__dropdown__wrap">
+            <ul class="header__dropdown__wrap__list">
+                <li class="header__dropdown__wrap__list__item"><a href="#" class="header__dropdown__wrap__list__item__link">Новинки</a></li>
+                <li class="header__dropdown__wrap__list__item"><a href="#" class="header__dropdown__wrap__list__item__link">Топ продаж</a></li>
+                <li class="header__dropdown__wrap__list__item"><a href="#" class="header__dropdown__wrap__list__item__link">Для мужчин</a></li>
+                <li class="header__dropdown__wrap__list__item"><a href="#" class="header__dropdown__wrap__list__item__link">Для женщин</a></li>
+                <li class="header__dropdown__wrap__list__item"><a href="#" class="header__dropdown__wrap__list__item__link">Ароматы Trine</a></li>
+                <li class="header__dropdown__wrap__list__item"><a href="#" class="header__dropdown__wrap__list__item__link">Аромо Box</a></li>
+                <li class="header__dropdown__wrap__list__item"><a href="#" class="header__dropdown__wrap__list__item__link">Сертификаты</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/slider.js"></script>
+    
+    <script>
+        // Autoplay 
+        const splide = new Splide( '.splide', {
+        type   : 'loop',
+        drag   : 'free',
+        focus  : 'center',
+        perPage: 3,
+        arrows: false,
+        autoWidth: true,
+        pagination: false,
+        gap: 40,
+        autoScroll: {
+            speed: 1,
+        },
+        } );
+
+        splide.mount(window.splide.Extensions);
+    </script>
+
+    <script>
+    // Accardion
+    document.addEventListener('DOMContentLoaded', () => {
+        const accordions = document.querySelectorAll('.faq__wrap__accardion');
+
+        accordions.forEach(el => {
+            el.addEventListener('click', (e) => {
+                const self = e.currentTarget;
+                const control = self.querySelector('.faq__wrap__accardion__control');
+                const content = self.querySelector('.faq__wrap__accardion__content');
+
+                self.classList.toggle('open');
+
+                // если открыт аккордеон
+                if (self.classList.contains('open')) {
+                    control.setAttribute('aria-expanded', true);
+                    content.setAttribute('aria-hidden', false);
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                } else {
+                    control.setAttribute('aria-expanded', false);
+                    content.setAttribute('aria-hidden', true);
+                    content.style.maxHeight = null;
+                }
+            });
+        });
+    });
+    </script>
+
+</body>
+</html>

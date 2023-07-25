@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF-Regular', sans-serif;
+    font-weight: 400;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    background-color: #EAE9E5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+div, a, button, span, p {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-tap-highlight-color: transparent;
+}
+
+// Blocks
+@import '../scss/fonts';
+@import '../scss/vars';
+
+@import '../scss/blocks/header';
+@import '../scss/blocks/header-order';
+@import '../scss/blocks/catalog';
+@import '../scss/blocks/product';
+@import '../scss/blocks/fashion';
+@import '../scss/blocks/cart';
+@import '../scss/blocks/order';
+@import '../scss/blocks/intro';
+@import '../scss/blocks/advantages';
+@import '../scss/blocks/faq';
+@import '../scss/blocks/reviews';
+@import '../scss/blocks/menu';
+@import '../scss/blocks/footer';
+
+// Adaptive
+@import '../scss/responsive/1199px';
+@import '../scss/responsive/991px';
+@import '../scss/responsive/767px';
+@import '../scss/responsive/575px';

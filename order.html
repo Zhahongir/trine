@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trine</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header-order">
+        <div class="container">
+            <div class="header-order__wrap">
+                <a href="index.html" class="header-order__wrap__logo">
+                    <img src="icons/logo.svg" alt="logo" class="header-order__wrap__logo__icon">
+                </a>
+                <h1 class="header-order__wrap__title">Оформление заказа</h1>
+                <a href="#" class="header-order__wrap__close">
+                    <img src="icons/close.svg" alt="close" class="header-order__wrap__close__icon">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="order">
+        <div class="order__info">
+            <div class="container">
+                <div class="order__info__contacts">
+                    <h2 class="order__info__contacts__title order-title">Контактные данные</h2>
+                    <div class="order__info__contacts__item">
+                        <input type="text" placeholder="Имя" class="order__info__contacts__item__input">
+                    </div>
+                    <div class="order__info__contacts__item">
+                        <input type="text" placeholder="Фамилия" class="order__info__contacts__item__input">
+                    </div>
+                    <div class="order__info__contacts__item">
+                        <input type="text" placeholder="E-mail" class="order__info__contacts__item__input">
+                    </div>
+                    <div class="order__info__contacts__item">
+                        <input type="text" placeholder="Номер телефона" class="order__info__contacts__item__input">
+                    </div>
+                </div>
+                <div class="order__info__delivery">
+                    <h2 class="order__info__delivery__title order-title">Доставка</h2>
+                    <div class="order__info__delivery__item">
+                        <select name="" id="country" class="order__info__delivery__item__select">
+                            <option value="Страна" class="order__info__delivery__item__select__option">Страна</option>
+                            <option value="Россия" class="order__info__delivery__item__select__option">Россия</option>
+                            <option value="Беларусь" class="order__info__delivery__item__select__option">Беларусь</option>
+                            <option value="Казахстан" class="order__info__delivery__item__select__option">Казахстан</option>
+                        </select>
+                    </div>
+                    <div class="order__info__delivery__item">
+                        <input type="text" placeholder="Город" class="order__info__delivery__item__input">
+                    </div>
+                    <div class="order__info__delivery__item">
+                        <input type="text" placeholder="Улица" class="order__info__delivery__item__input">
+                    </div>
+                    <div class="order__info__delivery__inner">
+                        <div class="order__info__delivery__inner__item">
+                            <input type="text" placeholder="Дом" class="order__info__delivery__inner__item__input">
+                        </div>
+                        <div class="order__info__delivery__inner__item">
+                            <input type="text" placeholder="Квартира/офис" class="order__info__delivery__inner__item__input">
+                        </div>
+                        <div class="order__info__delivery__inner__item">
+                            <input type="text" placeholder="Индекс" class="order__info__delivery__inner__item__input">
+                        </div>
+                    </div>
+                </div>
+                <div class="order__info__delivery-method">
+                    <h2 class="order__info__delivery-method__title order-title">Способ доставки</h2>
+                    <div class="order__info__delivery-method__inner">
+                        <div class="order__info__delivery-method__inner__item">
+                            <input checked type="radio" id="sdek" class="order__info__delivery-method__inner__item__input">
+                            <label for="sdek" class="order__info__delivery-method__inner__item__label"><span class="order__info__delivery-method__inner__item__label__span">Курьером СДЭК <br> <span>От 3 дней</span></span></label>
+                        </div>
+                        <div class="order__info__delivery-method__inner__item">
+                            <input type="radio" id="pochtaRus" class="order__info__delivery-method__inner__item__input">
+                            <label for="pochtaRus" class="order__info__delivery-method__inner__item__label"><span class="order__info__delivery-method__inner__item__label__span">Почта России <br> <span>От 5 дней</span></span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="order__info__payment">
+                    <h2 class="order__info__payment__title order-title">Способ Оплаты</h2>
+                    <div class="order__info__payment__inner">
+                        <div class="order__info__payment__inner__item">
+                            <input checked type="radio" id="cardPay" class="order__info__payment__inner__item__input">
+                            <label for="cardPay" class="order__info__payment__inner__item__label">Банковской картой</label>
+                        </div>
+                        <div class="order__info__payment__inner__item">
+                            <input type="radio" id="cash" class="order__info__payment__inner__item__input">
+                            <label for="cash" class="order__info__payment__inner__item__label">Наличными/картой при получении</label>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="order__info__buy">Оформить заказ</a>
+                <a href="privacy.html" target="_blank" class="order__info__agreement">Оформляя заказ, вы даёте согласие на сбор, обработку и хранение ваших персональных данных.</a>
+            </div>
+        </div>
+        <div class="order__cart">
+            <div class="order__cart__products">
+                <div class="order__cart__products__item">
+                    <img src="images/item-1.webp" alt="photo" class="order__cart__products__item__photo">
+                    <div class="order__cart__products__item__info">
+                        <div class="order__cart__products__item__info__header">
+                            <div class="order__cart__products__item__info__header__main">
+                                <h5 class="order__cart__products__item__info__header__main__title">Acqua Di Parma Chinotto Di Liguria</h5>
+                                <div class="order__cart__products__item__info__header__main__volume">Объем: <span>5</span> мл</div>
+                                <div class="order__cart__products__item__info__header__main__count">Количество: <span>1</span></div>
+                            </div>
+                            <span class="order__cart__products__item__info__header__price">500 ₽</span>
+                        </div>
+                        <div class="order__cart__products__item__info__options">
+                            <button class="order__cart__products__item__info__options__delete">Удалить</button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="order__cart__promo-code">
+                <h3 class="order__cart__promo-code__title">Есть промо-код?</h3>
+                <form action="#" class="order__cart__promo-code__form">
+                    <input type="text" placeholder="Введите промо-код" class="order__cart__promo-code__form__input">
+                    <button class="order__cart__promo-code__form__button">Применить</button>
+                </form>
+            </div>
+            <div class="order__cart__price">
+                <div class="order__cart__price__discount">
+                    <h3 class="order__cart__price__discount__title">Скидка:</h3>
+                    <span class="order__cart__price__discount__number">0 ₽</span>
+                </div>
+                <div class="order__cart__price__sum">
+                    <h3 class="order__cart__price__sum__title">Итоговая сумма:</h3>
+                    <span class="order__cart__price__sum__number">7 600 ₽</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" style="margin-top: 0;">
+        <div class="container">
+            <div class="footer__wrap">
+                <a href="index.html" class="footer__wrap__logo">
+                    <img src="icons/logo-small-footer.svg" alt="logo" class="footer__wrap__logo__icon">
+                </a>
+                <div class="footer__wrap__nav">
+                    <h5 class="footer__wrap__nav__title footer-title">Каталог</h5>
+                    <div class="footer__wrap__nav__content">
+                        <ul class="footer__wrap__nav__content__left">
+                            <li class="footer__wrap__nav__content__left__item"><a href="#" class="footer__wrap__nav__content__left__item__link">Новинки</a></li>
+                            <li class="footer__wrap__nav__content__left__item"><a href="#" class="footer__wrap__nav__content__left__item__link">Топ продаж</a></li>
+                            <li class="footer__wrap__nav__content__left__item"><a href="#" class="footer__wrap__nav__content__left__item__link">Для мужчин</a></li>
+                            <li class="footer__wrap__nav__content__left__item"><a href="#" class="footer__wrap__nav__content__left__item__link">Для женщин</a></li>
+                        </ul>
+                        <ul class="footer__wrap__nav__content__right">
+                            <li class="footer__wrap__nav__content__right__item"><a href="#" class="footer__wrap__nav__content__right__item__link">Ароматы Trine</a></li>
+                            <li class="footer__wrap__nav__content__right__item"><a href="#" class="footer__wrap__nav__content__right__item__link">Аромо Box</a></li>
+                            <li class="footer__wrap__nav__content__right__item"><a href="#" class="footer__wrap__nav__content__right__item__link">Сертификаты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__wrap__menu">
+                    <h5 class="footer__wrap__menu__title footer-title">Навигация</h5>
+                    <ul class="footer__wrap__menu__list">
+                        <li class="footer__wrap__menu__list__item"><a href="#" class="footer__wrap__menu__list__item__link">О нас</a></li>
+                        <li class="footer__wrap__menu__list__item"><a href="#" class="footer__wrap__menu__list__item__link">Доставка и оплата</a></li>
+                        <li class="footer__wrap__menu__list__item"><a href="#" class="footer__wrap__menu__list__item__link">Отзывы</a></li>
+                        <li class="footer__wrap__menu__list__item"><a href="#" class="footer__wrap__menu__list__item__link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__wrap__other">
+                    <h5 class="footer__wrap__other__title footer-title">Другое</h5>
+                    <ul class="footer__wrap__other__list">
+                        <li class="footer__wrap__other__list__item"><a href="#" class="footer__wrap__other__list__item__link">Оферта</a></li>
+                        <li class="footer__wrap__other__list__item"><a href="#" class="footer__wrap__other__list__item__link">Условия покупки</a></li>
+                        <li class="footer__wrap__other__list__item"><a href="#" class="footer__wrap__other__list__item__link">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <span class="footer__copyright__since">2023 © Trine</span>
+                <a href="https://t.me/zhahongir_web" target="_blank" class="footer__copyright__developer">Разработка @zhahongir_web</a>
+            </div>
+            <img src="icons/logo-footer.svg" alt="logo" class="footer__logo">
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <script src="js/app.js"></script>
+
+    <script>
+        var openCartButton = document.getElementById('cartBtn');
+        var closeCartButton = document.getElementById('closeCartBtn');
+        var cart = document.getElementById('cart');
+        var overlay = document.getElementById('cartBg');
+
+        openCartButton.addEventListener('click', function() {
+            cart.classList.add('open-cart');
+            overlay.style.display = 'block';
+            document.body.classList.add('cart-overflow');
+        });
+
+        closeCartButton.addEventListener('click', function() {
+            cart.classList.remove('open-cart');
+            overlay.style.display = 'none';
+            document.body.classList.remove('cart-overflow');
+        });
+    </script>
+
+
+</body>
+</html>

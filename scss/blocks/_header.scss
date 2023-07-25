@@ -1,0 +1,166 @@
+.header {
+    background-color: $color-brand;
+    z-index: 100;
+    width: 100%;
+    margin: 0 auto;
+    height: 63px;
+    position: fixed;
+    transition: 0.3s linear;
+    &__wrap {
+        z-index: 101;
+        background-color: $color-brand;
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $color-gray-3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__logo {
+            transition: 0.3s;
+            &:hover {
+                opacity: 0.8;
+            }
+            &__icon {
+                width: 145px;
+                height: 100%;
+            }
+        }
+        &__nav {
+            position: relative;
+            &__list {
+                display: flex;
+                align-items: center;
+                position: relative;
+                column-gap: 20px;
+                &__item {
+                    &__link {
+                        display: flex;
+                        align-items: center;
+                        font-size: 13px;
+                        color: $color-dark;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        position: relative;
+                        cursor: pointer;
+                        transition: 0.2s ease;
+                        &:hover {
+                            color: $color-gray-3;
+                        }
+                        &__icon {
+                            width: 9px;
+                            height: 9px;
+                            margin-left: 5px;
+                            transition: 0.5s linear;
+                        }
+                    }
+                }
+            }
+        }
+        &__inner {
+            display: flex;
+            align-items: center;
+        }
+        &__cart {
+            width: 148px;
+            padding: 12px 30px;
+            background-color: transparent;
+            border: 1px solid $color-dark;
+            border-radius: 500px;
+            transition: 0.3s linear;
+            cursor: pointer;
+            font-size: 13px;
+            text-transform: uppercase;
+            text-align: center;
+            &:hover {
+                background-color: $color-dark;
+                color: #fff;
+            }
+        }
+        &__hamburger {
+            display: none;
+            transition: all 0.4s ease-in-out;
+            cursor: pointer;
+            &__span {
+                background-color: $color-dark;
+            }
+            span {
+                display: block;
+                width: 32px;
+                height: 2px;
+                border-radius: 500px;
+                transition: all 0.4s ease-in-out;
+                &:not(:last-child) {
+                    margin-bottom: 7px;
+                }
+            }
+        }
+    }
+}
+
+.hamburger_active {
+    transition-delay: 0.8s;
+    transform: rotate(45deg);
+}
+
+.hamburger_active span:nth-child(2) {
+    width: 0;
+}
+
+.hamburger_active span:nth-child(1) {
+    transform: translateY(9px);
+    transition-delay: 0.4s;
+}
+
+.hamburger_active span:nth-child(3) {
+    transform: translateY(-9px) rotate(90deg);
+    transition-delay: 0.4s;
+}
+
+.header__dropdown {
+    position: fixed;
+    z-index: 99;
+    left: 50px;
+    right: 50px;
+    top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $color-brand;
+    border-bottom: 1px solid $color-gray-3;
+    transition: 0.3s linear;
+    &__wrap {
+        position: relative;
+        &__list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 30px;
+            &__item {
+                &__link {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $color-gray-3;
+                    transition: 0.2s ease;
+                    &:hover {
+                        color: $color-dark;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.brackets {
+    font-family: 'Habibi';
+}
+.count {
+    font-family: 'Gwen';
+}
+
+.header__nav__catalog-icon {
+    transform: rotate(180deg);
+}
+
+.header__dropdown_active {
+    top: 62px;
+}

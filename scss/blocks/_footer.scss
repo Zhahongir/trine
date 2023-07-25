@@ -1,0 +1,140 @@
+.footer {
+    position: relative;
+    margin-top: 120px;
+    padding-top: 40px;
+    background-color: #191919;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        &__logo {
+            transition: 0.3s linear;
+            &:hover {
+                opacity: 0.8;
+            }
+            &__icon {
+                width: 100px;
+                height: 100%;
+            }
+        }
+        &__nav {
+            position: relative;
+            &__content {
+                margin-top: 15px;
+                width: 280px;
+                display: flex;
+                justify-content: space-between;
+                &__left {
+                    position: relative;
+                    &__item {
+                        &__link {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: $color-gray-5;
+                            text-transform: uppercase;
+                            transition: 0.3s linear;
+                            &:hover {
+                                color: $color-gray-4;
+                            }
+                        }
+                        &:not(:last-child) {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                &__right {
+                    position: relative;
+                    &__item {
+                        &__link {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: $color-gray-5;
+                            text-transform: uppercase;
+                            transition: 0.3s linear;
+                            &:hover {
+                                color: $color-gray-4;
+                            }
+                        }
+                        &:not(:last-child) {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        &__menu {
+            position: relative;
+            &__list {
+                margin-top: 15px;
+                &__item {
+                    &__link {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $color-gray-5;
+                        text-transform: uppercase;
+                        transition: 0.3s linear;
+                        &:hover {
+                            color: $color-gray-4;
+                        }
+                    }
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        &__other {
+            position: relative;
+            &__list {
+                margin-top: 15px;
+                &__item {
+                    &__link {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $color-gray-5;
+                        text-transform: uppercase;
+                        transition: 0.3s linear;
+                        &:hover {
+                            color: $color-gray-4;
+                        }
+                    }
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    &__copyright {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        &__since {
+            font-size: 14px;
+            font-family: 'SF-Medium';
+            font-weight: 500;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        &__developer {
+            font-size: 14px;
+            font-weight: 400;
+            color: $color-gray-4;
+            transition: 0.3s linear;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    &__logo {
+        width: 100%;
+        margin-top: 60px;
+    }
+}
+
+.footer-title {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-gray-3;
+}

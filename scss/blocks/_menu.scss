@@ -1,0 +1,135 @@
+.menu {
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    background-color: $color-brand;
+    transition: 1s ease;
+    padding-top: 30px;
+    z-index: 201;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    &__inner {
+        text-align: center;
+        &__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid $color-gray-3;
+            padding-bottom: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            &__logo {
+                width: 145px;
+                height: auto;
+            }
+        }
+        &__accardion {
+            position: relative;
+            border-bottom: 1px solid $color-gray-3;
+            &__item {
+                position: relative;
+                text-align: left;
+                padding-left: 30px;
+                padding-right: 30px;
+                &:not(:first-child) {
+                    margin-top: 20px;
+                }
+                &__control {
+                    text-align: left;
+                    background-color: transparent;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    border: none;
+                    cursor: pointer;
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+                    &__header {
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        &__title {
+                            font-size: 18px;
+                            font-weight: 400;
+                            color: $color-dark;
+                            text-transform: uppercase;
+                        }
+                    }
+                    &__button {
+                        position: relative;
+                        width: 16px;
+                        height: 16px;
+                        background-color: $color-brand;
+                        transition: 0.5s linear;
+                    }
+                }
+                &__content {
+                    width: 100%;
+                    opacity: 0;
+                    max-height: 0;
+                    overflow: hidden;
+                    will-change: max-height;
+                    transition: all 0.3s ease-out;
+                    box-sizing: content-box;
+                    &__list {
+                        position: relative;
+                        &__item {
+                            position: relative;
+                            &:first-child {
+                                border-top: 1px solid $color-gray-4;
+                            }
+                            &:not(:last-child) {
+                                border-bottom: 1px solid $color-gray-4;
+                            }
+                            &__link {
+                                font-size: 16px;
+                                color: $color-dark;
+                                font-weight: 400;
+                                display: block;
+                                width: 100%;
+                                padding-top: 18px;
+                                padding-bottom: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__nav {
+            position: relative;
+            text-align: left;
+            &__item {
+                position: relative;
+                border-bottom: 1px solid $color-gray-4;
+                &__link {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #322C28;
+                    text-transform: uppercase;
+                    padding-top: 18px;
+                    padding-bottom: 18px;
+                    padding-left: 35px;
+                    padding-right: 35px;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.menu_active {
+    left: 0;
+}
+
+.openMenu .menu__inner__accardion__item__content {
+    display: block;
+    opacity: 1;
+    margin-bottom: 5px;
+}
+
+.openMenu .menu__inner__accardion__item__control__button {
+    transform: rotate(180deg);
+}

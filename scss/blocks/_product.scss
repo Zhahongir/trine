@@ -1,0 +1,308 @@
+.product {
+    position: relative;
+    padding-top: 140px;
+    &__wrap {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        &__gallery {
+            position: relative;
+            width: 45%;
+            margin-right: 50px;
+            overflow: hidden;
+            &__bar {
+                width: 100%;
+                position: relative;
+                &__inner {
+                    width: 20% !important;
+                    height: auto !important;
+                    object-fit: cover;
+                    &__photo {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        &__info {
+            width: 50%;
+            position: relative;
+            &__title {
+                font-size: 32px;
+                font-weight: 400;
+                color: $color-dark;;
+            }
+            &__price {
+                font-size: 32px;
+                margin-top: 20px;
+                color: $color-gray-2;
+                font-family: 'SF-Medium';
+                font-weight: 500;
+            }
+            &__volume {
+                margin-top: 40px;
+                position: relative;
+                padding-top: 20px;
+                padding-bottom: 30px;
+                border-top: 1px solid $color-gray-4;
+                border-bottom: 1px solid $color-gray-4;
+                &__title {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $color-gray-2;
+                }
+                &__form {
+                    position: relative;
+                    margin-top: 20px;
+                    &__items {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 10px;
+                        &__label {
+                            text-align: center;
+                            width: 108px;
+                            padding: 12px 0 12px 0;
+                            border-radius: 500px;
+                            border: 1px solid $color-gray-4;
+                            cursor: pointer;
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: $color-gray-2;
+                            transition: 0.3s linear;
+                            &:hover {
+                                border: 1px solid $color-gray-2;
+                            }
+                        }
+                        .card-label-active {
+                            border: 1px solid $color-dark;
+                            color: $color-dark;
+                        }
+                    }
+                }
+            }
+            &__btns {
+                display: flex;
+                align-items: center;
+                position: relative;
+                margin-top: 30px;
+                &__buy {
+                    height: 53px;
+                    width: 246px;
+                    text-align: center;
+                    background-color: $color-dark;
+                    color: #fff;
+                    border-radius: 500px;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    transition: 0.3s linear;
+                    &:hover {
+                        box-shadow: 0px 0px 30px 0px rgba(50, 44, 40, 0.15);
+                    }
+                }
+                &__count {
+                    width: 132px;
+                    margin-left: 20px;
+                    height: 53px;
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid $color-gray-4;
+                    border-radius: 500px;
+                    text-align: center;
+                    justify-content: space-between;
+                    &__number {
+                        width: 40px;
+                        text-align: center;
+                        background-color: transparent;
+                        font-size: 18px;
+                        height: 100%;
+                        font-weight: 400;
+                        color: $color-dark;
+                        border: none;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                    &__move {
+                        width: 46px;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        align-items: center;
+                        height: 100%;
+                        transition: 0.3s linear;
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mySwiper2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    .swiper-wrapper {
+        .swiper-slide {
+            width: 100% !important;
+            height: auto !important;
+            transition: 0.5s ease-in;
+            .card__gallery__slide__photo {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+            .card__gallery__slide__photo__main {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                transition: 0.3s ease-in;
+                position: relative;
+            }
+        }
+    }
+}
+
+.mySwiper1 {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+    .swiper-slide {
+        cursor: pointer;
+        opacity: 0.6;
+        .card__wrap__gallery__bar__inner__photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .swiper-slide-thumb-active {
+        opacity: 1;
+    }
+}
+
+.card-swiper-btn-prev {
+    fill: #fff;
+    width: 35px !important;
+    transition: 0.2s ease;
+    &__icon {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.card-swiper-btn-next {
+    fill: #fff;
+    width: 35px !important;
+    transition: 0.2s ease;
+    &__icon {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.swiper-button-prev::after,.swiper-button-next::after {
+    display:none
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.tab__wrap {
+    position: relative;
+    margin-top: 60px;
+    .tabheader {
+        width: 100%;
+        display: flex;
+        &__items {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .tabheader__item {
+            width: 50%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            font-size: 18px;
+            color: $color-gray-4;
+            border-bottom: 1px solid $color-gray-4;
+            font-weight: 400;
+            cursor: pointer;
+            transition: 0.3s ease;
+            &:hover {
+                color: $color-gray-3;
+                border-bottom: 1px solid $color-gray-3;
+            }
+        }
+        .tabheader__item_active {
+            color: $color-dark;
+            border-bottom: 1px solid $color-dark;
+        }
+    }
+    .tabcontent {
+        width: 100%;
+        position: relative;
+        margin-top: 25px;
+        &__inner {
+            position: relative;
+            &__text {
+                margin-top: 15px;
+                font-size: 16px;
+                color: $color-gray-2;
+            }
+            &__character {
+                position: relative;
+                &__item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid $color-gray-4;
+                    &__name {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $color-gray-3;
+                    }
+                    &__descrp {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $color-dark;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from{opacity: 0.1;}
+    to{opacity: 1;}
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

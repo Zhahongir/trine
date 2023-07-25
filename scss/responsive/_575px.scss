@@ -1,0 +1,30 @@
+@media screen and (max-width: 575px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .catalog__wrap .promo__title {
+        font-size: 28px;
+    }
+
+    .catalog__wrap .promo__title__brackets {
+        font-size: 18px;
+    }
+
+    .catalog__wrap .promo__title__count {
+        font-size: 18px;
+    }
+
+    .catalog__wrap .promo__nav {
+        display: none;
+    }
+
+    .catalog__wrap__content__cards {
+        grid-template: 1fr / 100%;
+    }
+
+    .header__wrap__cart {
+        order: 2;
+    }
+}

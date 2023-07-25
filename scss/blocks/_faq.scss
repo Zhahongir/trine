@@ -1,0 +1,136 @@
+.faq {
+    position: relative;
+    padding-top: 100px;
+    &__title {
+        font-size: 32px;
+        font-weight: 400;
+        color: $color-dark;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__wrap {
+        position: relative;
+        margin-top: 30px;
+        &__list {
+            display: grid;
+            justify-content: space-between;
+            grid-template: 1fr / 48% 48%;
+            align-items: baseline;
+            .faq__wrap__accardion {
+                position: relative;
+                text-align: left;
+                background-color: #fff;
+                border-radius: 30px;
+                padding-left: 25px;
+                padding-right: 25px;
+                &:not(:first-child) {
+                    margin-top: 20px;
+                }
+                &__control {
+                    text-align: left;
+                    background-color: transparent;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    border: none;
+                    cursor: pointer;
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+                    &__header {
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        &__icon {
+                            width: 47px;
+                            height: 47px; 
+                            background-color: $color-dark;
+                            border-radius: 100%;
+                            display: flex;
+                            justify-content: center;
+                            text-align: center;
+                            align-items: center;
+                            font-size: 22px;
+                            font-weight: 500;
+                            color: #fff;
+                            font-family: 'SF-Medium';
+                            margin-right: 15px;
+                        }
+                        &__title {
+                            font-size: 18px;
+                            font-weight: 400;
+                            color: $color-dark;
+                        }
+                    }
+                    &__button {
+                        position: relative;
+                        width: 47px;
+                        height: 47px;
+                        background-color: $color-brand;
+                        border-radius: 100%;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        justify-content: center;
+                        &__minus {
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 19px;
+                            height: 2.5px;
+                            background-color: $color-dark;
+                            border-radius: 500px;
+                        }
+                        &__plus {
+                            width: 19px;
+                            height: 2px;
+                            background-color: $color-dark;
+                            border-radius: 500px;
+                            transform: rotate(90deg);
+                            transition: 0.3s linear;
+                        }
+                    }
+                }
+                &__content {
+                    width: 100%;
+                    opacity: 0;
+                    max-height: 0;
+                    overflow: hidden;
+                    will-change: max-height;
+                    transition: all 0.3s ease-out;
+                    box-sizing: content-box;
+                    &__text {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $color-gray-3;
+                        &:not(:first-child) {
+                            padding-top: 15px;
+                        }
+                        a {
+                            color: $color-dark;
+                            font-weight: 500;
+                            font-family: 'SF-Medium';
+                            transition: 0.3s linear;
+                            &:hover {
+                                opacity: 0.8;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.open .faq__wrap__accardion__content {
+    display: block;
+    opacity: 1;
+    border-top: 1px solid $color-gray-5;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.open .faq__wrap__accardion__control__button__plus {
+    transform: rotate(0);
+}

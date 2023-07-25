@@ -1,0 +1,41 @@
+.header-order {
+    position: relative;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid $color-gray-3;
+    width: 100%;
+    background-color: #fff;
+    &__wrap {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__logo {
+            transition: 0.3s;
+            &:hover {
+                opacity: 0.8;
+            }
+            &__icon {
+                width: 145px;
+                height: 100%;
+            }
+        }
+        &__title {
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 'SF-Medium';
+            color: $color-dark;
+            text-transform: uppercase;
+        }
+        &__close {
+            transition: 0.3s;
+            &:hover {
+                opacity: 0.8;
+            }
+            &__icon {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}

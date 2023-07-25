@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trine</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <a href="index.html" class="header__wrap__logo">
+                    <img src="icons/logo.svg" alt="logo" class="header__wrap__logo__icon">
+                </a>
+                <div class="header__wrap__nav">
+                    <ul class="header__wrap__nav__list">
+                        <li class="header__wrap__nav__list__item header__nav__catalog">
+                            <a class="header__wrap__nav__list__item__link">Каталог
+                                <img src="icons/arrow-down.svg" alt="icon" class="header__wrap__nav__list__item__link__icon">
+                            </a>
+                        </li>
+                        <li class="header__wrap__nav__list__item"><a href="#" class="header__wrap__nav__list__item__link">О нас</a></li>
+                        <li class="header__wrap__nav__list__item"><a href="#" class="header__wrap__nav__list__item__link">Доставка и оплата</a></li>
+                        <li class="header__wrap__nav__list__item"><a href="#" class="header__wrap__nav__list__item__link">Отзывы</a></li>
+                        <li class="header__wrap__nav__list__item"><a href="#" class="header__wrap__nav__list__item__link">Контакты</a></li>
+                    </ul>
+                </div>
+                <button class="header__wrap__cart">
+                    Корзина <span class="brackets">(</span><span class="count">0</span><span class="brackets">)</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="product">
+        <div class="container">
+            <div class="product__wrap">
+                <div class="product__wrap__gallery">
+                    <div class="product__wrap__gallery__inner swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide card__gallery__slide">
+                                <a href="images/item-1.webp" class="card__gallery__slide__photo glightbox" data-gallery="gallery-auto">
+                                    <img class="card__gallery__slide__photo__main" alt="car" src="images/item-1.webp"/>
+                                </a>
+                            </div>
+                            <div class="swiper-slide card__gallery__slide">
+                                <a href="images/item-2.webp" class="card__gallery__slide__photo glightbox" data-gallery="gallery-auto">
+                                    <img class="card__gallery__slide__photo__main" alt="car" src="images/item-2.webp"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next card-swiper-btn-next">
+                            <img src="icons/slider-next.svg" alt="next" class="card-swiper-btn-next__icon">
+                        </div>
+                        <div class="swiper-button-prev card-swiper-btn-prev">
+                            <img src="icons/slider-prev.svg" alt="prev" class="card-swiper-btn-prev__icon">
+                        </div>
+                    </div>
+
+                    <div thumbsSlider="" class="product__wrap__gallery__bar swiper mySwiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide product__wrap__gallery__bar__inner">
+                                <img class="product__wrap__gallery__bar__inner__photo" alt="photo" src="images/item-1.webp"/>
+                            </div>
+                            <div class="swiper-slide product__wrap__gallery__bar__inner">
+                                <img class="product__wrap__gallery__bar__inner__photo" alt="photo" src="images/item-2.webp"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__wrap__info">
+                    <h1 class="product__wrap__info__title">Acqua Di Parma Chinotto Di Liguria</h1>
+                    <h2 class="product__wrap__info__price">500 ₽</h2>
+                    <div class="product__wrap__info__volume">
+                        <h3 class="product__wrap__info__volume__title">Выберите объем:</h3>
+                        <div class="product__wrap__info__volume__form">
+                            <div class="product__wrap__info__volume__form__items">
+                                <label for="" class="product__wrap__info__volume__form__items__label card-label-active">5 мл</label>
+                                <label for="" class="product__wrap__info__volume__form__items__label">10 мл</label>
+                                <label for="" class="product__wrap__info__volume__form__items__label">75 мл</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__wrap__info__btns">
+                        <button class="product__wrap__info__btns__buy">Добавить в корзину</button>
+                        <div class="product__wrap__info__btns__count">
+                            <span class="product__wrap__info__btns__count__move minus-count">
+                                <img src="icons/minus.svg" alt="minus" class="product__wrap__info__btns__count__move__icon">
+                            </span>
+                            <input type="number" value="1" class="product__wrap__info__btns__count__number">
+                            <span class="product__wrap__info__btns__count__move pluse-count">
+                                <img src="icons/pluse.svg" alt="pluse" class="product__wrap__info__btns__count__move__icon">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="product__wrap__info__descr">
+                        <div class="tab__wrap tabcontainer">
+                            <div class="tabheader">
+                                <div class="tabheader__items">
+                                    <div class="tabheader__item tabheader__item_active">Описание</div>
+                                    <div class="tabheader__item">Характеристики</div>
+                                </div>
+                            </div>
+
+                            <div class="tabcontent hide show fade">
+                                <div class="tabcontent__inner">
+                                    <p class="tabcontent__inner__text">Итальянское Средиземноморье — это самый желанный рай с бурей чувств, место, где яркость живой природы видна во всей своей грации; бесчисленное множество вкусов, ароматов и сочных фруктов, дразнящих чувства.</p>
+                                    <p class="tabcontent__inner__text">Место, где Acqua di Parma отбирает самые драгоценные ингредиенты и перевоплощает их с мастерским искусством в ароматы коллекции Blu Mediterraneo. Каждый аромат мгновенно переносит тебя в поцелованный солнцем райский сад, раскрывая самое ценное символической локации и фруктов итальянских побережий.</p>
+                                    <p class="tabcontent__inner__text">И все же Blu Mediterraneo – не просто коллекция ароматов, посвящённых тому незабвенному морю! Это свежесть, которая захлёстывает душу, момент единения со всем, что тебя окружает. Это свободное дыхание, исполненное жажды к жизни, словно солнечный смех на пляжных песках, пикники в закатных лучах, купание в открытом синем море и сладкий сок фруктов!</p>
+                                </div>
+                            </div>
+
+                            <div class="tabcontent hide">
+                                <div class="tabcontent__inner">
+                                    <div class="tabcontent__inner__character">
+                                        <div class="tabcontent__inner__character__item">
+                                            <h5 class="tabcontent__inner__character__item__name">Тип продукта</h5>
+                                            <p class="tabcontent__inner__character__item__descrp">Туалетная вода</p>
+                                        </div>
+                                        <div class="tabcontent__inner__character__item">
+                                            <h5 class="tabcontent__inner__character__item__name">Для кого</h5>
+                                            <p class="tabcontent__inner__character__item__descrp">Унисекс</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fashion">
+        <div class="container">
+            <h2 class="fashion__title">Вам также могут понравиться</h2>
+            <div class="fashion__wrap">
+                <a href="product.html" class="fashion__wrap__item">
+                    <div class="fashion__wrap__item__header">
+                        <img src="images/item-2.webp" alt="product photo" class="fashion__wrap__item__header__photo">
+                    </div>
+                    <div class="fashion__wrap__item__info">
+                        <h2 class="fashion__wrap__item__info__title">Playing with the Devil</h2>
+                        <span class="fashion__wrap__item__info__price">1 000 ₽ – 1 800 ₽</span>
+                    </div>
+                </a>
+                <a href="product.html" class="fashion__wrap__item">
+                    <div class="fashion__wrap__item__header">
+                        <img src="images/item-3.webp" alt="product photo" class="fashion__wrap__item__header__photo">
+                    </div>
+                    <div class="fashion__wrap__item__info">
+                        <h2 class="fashion__wrap__item__info__title">Tom Ford Cherry Smoke</h2>
+                        <span class="fashion__wrap__item__info__price">2 800 ₽ – 24 000 ₽</span>
+                    </div>
+                </a>
+                <a href="product.html" class="fashion__wrap__item">
+                    <div class="fashion__wrap__item__header">
+                        <img src="images/item-4.webp" alt="product photo" class="fashion__wrap__item__header__photo">
+                    </div>
+                    <div class="fashion__wrap__item__info">
+                        <h2 class="fashion__wrap__item__info__title">Tom Ford Electric Cherry</h2>
+                        <span class="fashion__wrap__item__info__price">2 800 ₽ – 24 000 ₽</span>
+                    </div>
+                </a>
+                <a href="product.html" class="fashion__wrap__item">
+                    <div class="fashion__wrap__item__header">
+                        <img src="images/item-5.webp" alt="product photo" class="fashion__wrap__item__header__photo">
+                    </div>
+                    <div class="fashion__wrap__item__info">
+                        <h2 class="fashion__wrap__item__info__title">Tom Ford Bitter Peach</h2>
+                        <span class="fashion__wrap__item__info__price">2 900 ₽ – 25 000 ₽</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <a href="index.html" class="footer__wrap__logo">
+                    <img src="icons/logo-small-footer.svg" alt="logo" class="footer__wrap__logo__icon">
+                </a>
+                <div class="footer__wrap__nav">
+                    <h5 class="footer__wrap__nav__title footer-title">Каталог</h5>
+                    <div class="footer__wrap__nav__content">
+                        <ul class="footer__wrap__nav__content__left">
+                            <li class="footer__wrap__nav__content__left__item"><a href="#" class="footer__wrap__nav__content__left__item__link">Новинки</a></li>
+                            <li class="footer__wrap__nav__content__left__item"><a href="#" class="footer__wrap__nav__content__left__item__link">Топ продаж</a></li>
+                            <li class="footer__wrap__nav__content__left__item"><a href="#" class="footer__wrap__nav__content__left__item__link">Для мужчин</a></li>
+                            <li class="footer__wrap__nav__content__left__item"><a href="#" class="footer__wrap__nav__content__left__item__link">Для женщин</a></li>
+                        </ul>
+                        <ul class="footer__wrap__nav__content__right">
+                            <li class="footer__wrap__nav__content__right__item"><a href="#" class="footer__wrap__nav__content__right__item__link">Ароматы Trine</a></li>
+                            <li class="footer__wrap__nav__content__right__item"><a href="#" class="footer__wrap__nav__content__right__item__link">Аромо Box</a></li>
+                            <li class="footer__wrap__nav__content__right__item"><a href="#" class="footer__wrap__nav__content__right__item__link">Сертификаты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__wrap__menu">
+                    <h5 class="footer__wrap__menu__title footer-title">Навигация</h5>
+                    <ul class="footer__wrap__menu__list">
+                        <li class="footer__wrap__menu__list__item"><a href="#" class="footer__wrap__menu__list__item__link">О нас</a></li>
+                        <li class="footer__wrap__menu__list__item"><a href="#" class="footer__wrap__menu__list__item__link">Доставка и оплата</a></li>
+                        <li class="footer__wrap__menu__list__item"><a href="#" class="footer__wrap__menu__list__item__link">Отзывы</a></li>
+                        <li class="footer__wrap__menu__list__item"><a href="#" class="footer__wrap__menu__list__item__link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__wrap__other">
+                    <h5 class="footer__wrap__other__title footer-title">Другое</h5>
+                    <ul class="footer__wrap__other__list">
+                        <li class="footer__wrap__other__list__item"><a href="#" class="footer__wrap__other__list__item__link">Оферта</a></li>
+                        <li class="footer__wrap__other__list__item"><a href="#" class="footer__wrap__other__list__item__link">Условия покупки</a></li>
+                        <li class="footer__wrap__other__list__item"><a href="#" class="footer__wrap__other__list__item__link">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <span class="footer__copyright__since">2023 © Trine</span>
+                <a href="https://t.me/zhahongir_web" target="_blank" class="footer__copyright__developer">Разработка @zhahongir_web</a>
+            </div>
+            <img src="icons/logo-footer.svg" alt="logo" class="footer__logo">
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <div class="header__dropdown">
+        <div class="header__dropdown__wrap">
+            <ul class="header__dropdown__wrap__list">
+                <li class="header__dropdown__wrap__list__item"><a href="#" class="header__dropdown__wrap__list__item__link">Новинки</a></li>
+                <li class="header__dropdown__wrap__list__item"><a href="#" class="header__dropdown__wrap__list__item__link">Топ продаж</a></li>
+                <li class="header__dropdown__wrap__list__item"><a href="#" class="header__dropdown__wrap__list__item__link">Для мужчин</a></li>
+                <li class="header__dropdown__wrap__list__item"><a href="#" class="header__dropdown__wrap__list__item__link">Для женщин</a></li>
+                <li class="header__dropdown__wrap__list__item"><a href="#" class="header__dropdown__wrap__list__item__link">Ароматы Trine</a></li>
+                <li class="header__dropdown__wrap__list__item"><a href="#" class="header__dropdown__wrap__list__item__link">Аромо Box</a></li>
+                <li class="header__dropdown__wrap__list__item"><a href="#" class="header__dropdown__wrap__list__item__link">Сертификаты</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/slider.js"></script>
+
+    <script>
+        // Tabs
+window.addEventListener('DOMContentLoaded', () => {
+  const tabs = document.querySelectorAll('.tabheader__item'),
+      tabsContent = document.querySelectorAll('.tabcontent'),
+      tabsParent = document.querySelector('.tabheader__items');   
+      
+  function hideTabContent() {
+      tabsContent.forEach (item => {
+          item.classList.add('hide');
+          item.classList.remove('show', 'fade');
+      });
+
+      tabs.forEach(item => {
+          item.classList.remove('tabheader__item_active');
+      });
+  }
+
+  function showTabContent(i = 0) {
+      tabsContent[i].classList.add('show', 'fade');
+      tabsContent[i].classList.remove('hide');
+      tabs[i].classList.add('tabheader__item_active');
+  }
+
+  hideTabContent();
+  showTabContent(0);
+
+  tabsParent.addEventListener('click', (event) => {
+      const target = event.target;
+
+      if (target && target.classList.contains('tabheader__item')) {
+          tabs.forEach((item, i) => {
+              if (target == item ) {
+                  hideTabContent();
+                  showTabContent(i);
+              }
+          });
+      }
+  });
+});
+    </script>
+
+
+
+</body>
+</html>
