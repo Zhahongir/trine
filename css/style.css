@@ -2791,9 +2791,12 @@ input::-webkit-inner-spin-button {
   .catalog__wrap__content__cards {
     grid-template: 1fr/100%;
   }
+  .header__wrap__logo__icon {
+    width: 100px;
+  }
   .header__wrap__cart {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    padding: 10px 15px;
+    width: 130px;
+    margin-right: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
