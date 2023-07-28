@@ -16,4 +16,121 @@
     .catalog__wrap__content__cards__item__info__title {
         font-size: 14px;
     }
+
+    .product__wrap__info__title {
+        font-size: 28px;
+    }
+
+    .product__wrap__info__volume {
+        margin-top: 30px;
+    }
+
+    .tab__wrap {
+        margin-top: 40px;
+    }
+
+    .fashion__title {
+        font-size: 24px;
+    }
+
+    .fashion__wrap__item__info__title {
+        font-size: 14px;
+    }
+
+    .fashion__wrap__item__info__price {
+        font-size: 16px;
+    }
+
+    .intro__wrap__content__title {
+        font-size: 28px;
+    }
+
+    .intro__wrap__content__logo {
+        width: 300px;
+        height: auto;
+    }
+
+    .intro__wrap__content {
+        width: 450px;
+    }
+
+    .intro__wrap__image-left {
+        width: 22%;
+    }
+
+    .intro__wrap__image-right {
+        width: 22%;
+    }
+
+    .intro__wrap {
+        align-items: flex-end;
+    }
+
+    .advantages__title {
+        font-size: 28px;
+    }
+
+    .advantages__wrap {
+        grid-template: 1fr / 48% 48%;
+    }
+
+    .faq__wrap__list .faq__wrap__accardion__control__header__title {
+        font-size: 15px;
+    }
+
+    .faq__wrap__list .faq__wrap__accardion__content__text {
+        font-size: 14px;
+    }
+
+    .faq__title {
+        font-size: 28px;
+    }
+
+    .reviews__title {
+        font-size: 28px;
+    }
+
+    .intro__wrap {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;;
+    }
+
+    .intro__wrap__image-left {
+        width: 100%;
+        display: none;
+    }
+
+    .intro__wrap__image-right {
+        width: 100%;
+        display: none;
+    }
+
+    .intro__wrap__mob {
+        display: grid;
+        justify-content: space-between;
+        grid-template: 1fr / 48% 48%;
+        margin-top: 30px;
+    }
+
+    .intro {
+        padding-top: 120px;
+    } 
+
+    .order__cart {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .order__cart__products {
+        width: 100%;
+    }
+
+    .order__cart__promo-code {
+        width: 100%;
+    }
+
+    .order__cart__price {
+        width: 100%;
+    }
 }

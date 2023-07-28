@@ -55,4 +55,74 @@
     .footer__wrap__other {
         margin-top: 50px;
     }
+
+    .product {
+        padding-top: 120px;
+    }
+
+    .product__wrap__info__title {
+        font-size: 24px;
+    }
+
+    .product__wrap__info__price {
+        font-size: 28px;
+    }
+
+    .fashion__title {
+        font-size: 22px;
+    }
+
+    .fashion__wrap {
+        grid-template: 1fr/48% 48%;
+    }
+
+    .advantages__wrap {
+        grid-template: 1fr / 100%;
+    } 
+
+    .order {
+        flex-direction: column;
+    }
+
+    .order__info {
+        order: 2;
+        width: 100%;
+        margin-top: 30px;
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+
+    .order__cart {
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .header-order__wrap__title {
+        font-size: 14px;
+    }
+
+    .order__cart__products__item__info__header__main__title {
+        font-size: 16px;
+    }
+
+    .order__cart__products__item__info__header__price {
+        font-size: 20px;
+    }
+
+    .order__cart__products__item__photo {
+        width: 30%;
+    }
+
+    .order__cart__products__item__info {
+        width: 65%;
+    }
+
+    .order__cart__price__sum__number {
+        font-size: 20px;
+    }
+
+    .header-order__wrap__close {
+        width: 18px;
+        height: 18px;
+    }
 }

@@ -48,4 +48,122 @@
         margin-bottom: 0;
         margin-right: 25px;
     }
+
+    .product__wrap {
+        flex-direction: column;
+    }
+
+    .product__wrap__gallery {
+        width: 100%;
+    }
+
+    .product__wrap__info {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .fashion__wrap {
+        grid-template: 1fr/32% 32% 32%;
+    }
+
+    .fashion {
+        padding-top: 100px;
+    }
+
+    .advantages__wrap__item__header__title {
+        font-size: 14px;
+    }
+
+    .faq__wrap__list {
+        grid-template: 1fr / 100%;
+    }
+
+    .intro__wrap__content__title {
+        font-size: 24px;
+    }
+
+    .advantages {
+        padding-top: 90px;
+    }
+
+    .advantages__wrap {
+        margin-top: 30px;
+    }
+
+    .advantages__title {
+        font-size: 24px;
+    }
+
+    .faq {
+        padding-top: 80px;
+    }
+
+    .faq__title {
+        font-size: 24px;
+    }
+
+    .reviews__title {
+        font-size: 24px;
+    }
+
+    .reviews {
+        padding-top: 100px;
+    }
+
+    .reviews .splide .splide__slide {
+        height: 320px;
+    }
+
+    .order__cart__price__sum__title {
+        font-size: 16px;
+    }
+
+    .order__cart__products__item__info__header__price {
+        font-size: 18px;
+    }
+
+    .order__cart__promo-code__form__input {
+        width: 55%;
+    }
+
+    .order__cart__products__item__info__header {
+        flex-direction: column
+    }
+
+    .order__cart__products__item__info__header__price {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .order__cart__products__item__photo {
+        width: 35%;
+    }
+
+    .order__cart__products__item__info {
+        width: 62%;
+    }
+
+    .order__cart__products__item__info__header__main__title  {
+        font-size: 14px;
+    }
+
+    .order__cart__products__item__info__header__main__volume {
+        font-size: 12px;
+    }
+
+    .order__cart__products__item__info__header__main__volume span {
+        font-size: 12px;
+    } 
+
+    .order__cart__products__item__info__header__main__count {
+        font-size: 12px;
+    }
+
+    .order__cart__products__item__info__header__main__count span {
+        font-size: 12px;
+    }
+
+    .order__cart__products__item__info__header__main {
+        width: 100%;
+    }
 }

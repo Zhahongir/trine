@@ -27,7 +27,7 @@
         }
         &__accardion {
             position: relative;
-            border-bottom: 1px solid $color-gray-3;
+            border-bottom: 1px solid $color-gray-4;
             &__item {
                 position: relative;
                 text-align: left;
@@ -86,12 +86,13 @@
                             }
                             &__link {
                                 font-size: 16px;
-                                color: $color-dark;
+                                color: $color-gray-2;
                                 font-weight: 400;
                                 display: block;
                                 width: 100%;
                                 padding-top: 18px;
                                 padding-bottom: 18px;
+                                padding-left: 15px;
                             }
                         }
                     }
@@ -111,8 +112,8 @@
                     text-transform: uppercase;
                     padding-top: 18px;
                     padding-bottom: 18px;
-                    padding-left: 35px;
-                    padding-right: 35px;
+                    padding-left: 30px;
+                    padding-right: 30px;
                     display: block;
                 }
             }

@@ -26,14 +26,21 @@
                             </a>
                         </li>
                         <li class="header__wrap__nav__list__item"><a href="about-us.html" class="header__wrap__nav__list__item__link">О нас</a></li>
-                        <li class="header__wrap__nav__list__item"><a href="#" class="header__wrap__nav__list__item__link">Доставка и оплата</a></li>
-                        <li class="header__wrap__nav__list__item"><a href="#" class="header__wrap__nav__list__item__link">Отзывы</a></li>
-                        <li class="header__wrap__nav__list__item"><a href="#" class="header__wrap__nav__list__item__link">Контакты</a></li>
+                        <li class="header__wrap__nav__list__item"><a href="delivery.html" class="header__wrap__nav__list__item__link">Доставка и оплата</a></li>
+                        <li class="header__wrap__nav__list__item"><a href="about-us.html#reviews" class="header__wrap__nav__list__item__link">Отзывы</a></li>
+                        <li class="header__wrap__nav__list__item"><a href="contacts.html" class="header__wrap__nav__list__item__link">Контакты</a></li>
                     </ul>
                 </div>
-                <button class="header__wrap__cart">
-                    Корзина <span class="brackets">(</span><span class="count">0</span><span class="brackets">)</span>
-                </button>
+                <div class="header__wrap__inner">
+                    <button class="header__wrap__cart" id="cartBtn">
+                        Корзина <span class="brackets">(</span><span class="count">0</span><span class="brackets">)</span>
+                    </button>
+                    <div class="header__wrap__hamburger" id="menuOpen">
+                        <span class="header__wrap__hamburger__span"></span>
+                        <span class="header__wrap__hamburger__span"></span>
+                        <span class="header__wrap__hamburger__span"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -54,6 +61,10 @@
                             флакон парфюма, на складе находится более 50 000 позиций.</p>
                     </div>
                     <a href="index.html" class="intro__wrap__content__button">Перейти в каталог</a>
+                </div>
+                <div class="intro__wrap__mob">
+                    <img src="images/promo-1.webp" alt="image" class="intro__wrap__mob__left">
+                    <img src="images/promo-2.webp" alt="image" class="intro__wrap__mob__right">
                 </div>
                 <img src="images/promo-2.webp" alt="image" class="intro__wrap__image-right">
             </div>
@@ -114,7 +125,7 @@
                         <div class="advantages__wrap__item__header__circle">
                             <span class="advantages__wrap__item__header__circle__number">06</span>
                         </div>
-                        <h3 class="advantages__wrap__item__header__title">Еженедельные скидки до 50%</h3>
+                        <h3 class="advantages__wrap__item__header__title">Еженедельные скидки до&nbsp;50%</h3>
                     </div>
                     <p class="advantages__wrap__item__description">Каждую неделю проходят распродажи со скидкой до 50%.</p>
                 </div>
@@ -146,7 +157,7 @@
                         <button class="faq__wrap__accardion__control" aria-expanded="false">
                             <div class="faq__wrap__accardion__control__header">
                                 <div class="faq__wrap__accardion__control__header__icon">?</div>
-                                <h3 class="faq__wrap__accardion__control__header__title">Что делать, если я не знаю ароматов, <br>
+                                <h3 class="faq__wrap__accardion__control__header__title">Что делать, если я не знаю ароматов,
                                     но хочу сделать заказ?</h3>
                             </div>
                             <div class="faq__wrap__accardion__control__button">
@@ -217,10 +228,10 @@
                 <div class="footer__wrap__menu">
                     <h5 class="footer__wrap__menu__title footer-title">Навигация</h5>
                     <ul class="footer__wrap__menu__list">
-                        <li class="footer__wrap__menu__list__item"><a href="#" class="footer__wrap__menu__list__item__link">О нас</a></li>
-                        <li class="footer__wrap__menu__list__item"><a href="#" class="footer__wrap__menu__list__item__link">Доставка и оплата</a></li>
-                        <li class="footer__wrap__menu__list__item"><a href="#" class="footer__wrap__menu__list__item__link">Отзывы</a></li>
-                        <li class="footer__wrap__menu__list__item"><a href="#" class="footer__wrap__menu__list__item__link">Контакты</a></li>
+                        <li class="footer__wrap__menu__list__item"><a href="about-us.html" class="footer__wrap__menu__list__item__link">О нас</a></li>
+                        <li class="footer__wrap__menu__list__item"><a href="delivery.html" class="footer__wrap__menu__list__item__link">Доставка и оплата</a></li>
+                        <li class="footer__wrap__menu__list__item"><a href="about-us.html#reviews" class="footer__wrap__menu__list__item__link">Отзывы</a></li>
+                        <li class="footer__wrap__menu__list__item"><a href="contacts.html" class="footer__wrap__menu__list__item__link">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="footer__wrap__other">
@@ -241,6 +252,199 @@
     </footer>
 
 
+    <div class="cart-bg" id="cartBg"></div>
+    <div class="cart" id="cart">
+        <div class="cart__wrap">
+            <div class="cart__wrap__inner">
+                <div class="cart__wrap__inner__header">
+                    <h4 class="cart__wrap__inner__header__title">Корзина <span class="brackets">(</span><span class="count">5</span><span class="brackets">)</span></h4>
+                    <img src="icons/close.svg" alt="close" class="cart__wrap__inner__header__close" id="closeCartBtn">
+                </div>
+                <div class="cart__wrap__inner__content">
+                    <div class="cart__wrap__inner__content__item">
+                        <img src="images/item-1.webp" alt="photo" class="cart__wrap__inner__content__item__photo">
+                        <div class="cart__wrap__inner__content__item__info">
+                            <div class="cart__wrap__inner__content__item__info__header">
+                                <div class="cart__wrap__inner__content__item__info__header__main">
+                                    <h5 class="cart__wrap__inner__content__item__info__header__main__title">Acqua Di Parma Chinotto Di Liguria</h5>
+                                    <div class="cart__wrap__inner__content__item__info__header__main__volume">Объем: <span>5</span> мл</div>
+                                </div>
+                                <span class="cart__wrap__inner__content__item__info__header__price">500 ₽</span>
+                            </div>
+                            <div class="cart__wrap__inner__content__item__info__options">
+                                <div class="cart__wrap__inner__content__item__info__options__count">
+                                    <span class="cart__wrap__inner__content__item__info__options__count__move minus-count">
+                                        <img src="icons/minus.svg" alt="minus" class="cart__wrap__inner__content__item__info__options__count__move__icon">
+                                    </span>
+                                    <input type="number" value="1" class="cart__wrap__inner__content__item__info__options__count__number">
+                                    <span class="cart__wrap__inner__content__item__info__options__count__move pluse-count">
+                                        <img src="icons/pluse.svg" alt="pluse" class="cart__wrap__inner__content__item__info__options__count__move__icon">
+                                    </span>
+                                </div>
+                                <button class="cart__wrap__inner__content__item__info__options__delete">Удалить</button>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="cart__wrap__inner__content__item">
+                        <img src="images/item-2.webp" alt="photo" class="cart__wrap__inner__content__item__photo">
+                        <div class="cart__wrap__inner__content__item__info">
+                            <div class="cart__wrap__inner__content__item__info__header">
+                                <div class="cart__wrap__inner__content__item__info__header__main">
+                                    <h5 class="cart__wrap__inner__content__item__info__header__main__title">Playing with the Devil</h5>
+                                    <div class="cart__wrap__inner__content__item__info__header__main__volume">Объем: <span>5</span> мл</div>
+                                </div>
+                                <span class="cart__wrap__inner__content__item__info__header__price">1000 ₽</span>
+                            </div>
+                            <div class="cart__wrap__inner__content__item__info__options">
+                                <div class="cart__wrap__inner__content__item__info__options__count">
+                                    <span class="cart__wrap__inner__content__item__info__options__count__move minus-count">
+                                        <img src="icons/minus.svg" alt="minus" class="cart__wrap__inner__content__item__info__options__count__move__icon">
+                                    </span>
+                                    <input type="number" value="1" class="cart__wrap__inner__content__item__info__options__count__number">
+                                    <span class="cart__wrap__inner__content__item__info__options__count__move pluse-count">
+                                        <img src="icons/pluse.svg" alt="pluse" class="cart__wrap__inner__content__item__info__options__count__move__icon">
+                                    </span>
+                                </div>
+                                <button class="cart__wrap__inner__content__item__info__options__delete">Удалить</button>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="cart__wrap__inner__content__item">
+                        <img src="images/item-3.webp" alt="photo" class="cart__wrap__inner__content__item__photo">
+                        <div class="cart__wrap__inner__content__item__info">
+                            <div class="cart__wrap__inner__content__item__info__header">
+                                <div class="cart__wrap__inner__content__item__info__header__main">
+                                    <h5 class="cart__wrap__inner__content__item__info__header__main__title">Tom Ford Cherry Smoke</h5>
+                                    <div class="cart__wrap__inner__content__item__info__header__main__volume">Объем: <span>5</span> мл</div>
+                                </div>
+                                <span class="cart__wrap__inner__content__item__info__header__price">2800 ₽</span>
+                            </div>
+                            <div class="cart__wrap__inner__content__item__info__options">
+                                <div class="cart__wrap__inner__content__item__info__options__count">
+                                    <span class="cart__wrap__inner__content__item__info__options__count__move minus-count">
+                                        <img src="icons/minus.svg" alt="minus" class="cart__wrap__inner__content__item__info__options__count__move__icon">
+                                    </span>
+                                    <input type="number" value="1" class="cart__wrap__inner__content__item__info__options__count__number">
+                                    <span class="cart__wrap__inner__content__item__info__options__count__move pluse-count">
+                                        <img src="icons/pluse.svg" alt="pluse" class="cart__wrap__inner__content__item__info__options__count__move__icon">
+                                    </span>
+                                </div>
+                                <button class="cart__wrap__inner__content__item__info__options__delete">Удалить</button>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="cart__wrap__inner__content__item">
+                        <img src="images/item-1.webp" alt="photo" class="cart__wrap__inner__content__item__photo">
+                        <div class="cart__wrap__inner__content__item__info">
+                            <div class="cart__wrap__inner__content__item__info__header">
+                                <div class="cart__wrap__inner__content__item__info__header__main">
+                                    <h5 class="cart__wrap__inner__content__item__info__header__main__title">Acqua Di Parma Chinotto Di Liguria</h5>
+                                    <div class="cart__wrap__inner__content__item__info__header__main__volume">Объем: <span>5</span> мл</div>
+                                </div>
+                                <span class="cart__wrap__inner__content__item__info__header__price">500 ₽</span>
+                            </div>
+                            <div class="cart__wrap__inner__content__item__info__options">
+                                <div class="cart__wrap__inner__content__item__info__options__count">
+                                    <span class="cart__wrap__inner__content__item__info__options__count__move minus-count">
+                                        <img src="icons/minus.svg" alt="minus" class="cart__wrap__inner__content__item__info__options__count__move__icon">
+                                    </span>
+                                    <input type="number" value="1" class="cart__wrap__inner__content__item__info__options__count__number">
+                                    <span class="cart__wrap__inner__content__item__info__options__count__move pluse-count">
+                                        <img src="icons/pluse.svg" alt="pluse" class="cart__wrap__inner__content__item__info__options__count__move__icon">
+                                    </span>
+                                </div>
+                                <button class="cart__wrap__inner__content__item__info__options__delete">Удалить</button>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="cart__wrap__inner__content__item">
+                        <img src="images/item-1.webp" alt="photo" class="cart__wrap__inner__content__item__photo">
+                        <div class="cart__wrap__inner__content__item__info">
+                            <div class="cart__wrap__inner__content__item__info__header">
+                                <div class="cart__wrap__inner__content__item__info__header__main">
+                                    <h5 class="cart__wrap__inner__content__item__info__header__main__title">Acqua Di Parma Chinotto Di Liguria</h5>
+                                    <div class="cart__wrap__inner__content__item__info__header__main__volume">Объем: <span>5</span> мл</div>
+                                </div>
+                                <span class="cart__wrap__inner__content__item__info__header__price">500 ₽</span>
+                            </div>
+                            <div class="cart__wrap__inner__content__item__info__options">
+                                <div class="cart__wrap__inner__content__item__info__options__count">
+                                    <span class="cart__wrap__inner__content__item__info__options__count__move minus-count">
+                                        <img src="icons/minus.svg" alt="minus" class="cart__wrap__inner__content__item__info__options__count__move__icon">
+                                    </span>
+                                    <input type="number" value="1" class="cart__wrap__inner__content__item__info__options__count__number">
+                                    <span class="cart__wrap__inner__content__item__info__options__count__move pluse-count">
+                                        <img src="icons/pluse.svg" alt="pluse" class="cart__wrap__inner__content__item__info__options__count__move__icon">
+                                    </span>
+                                </div>
+                                <button class="cart__wrap__inner__content__item__info__options__delete">Удалить</button>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__wrap__inner__footer">
+                    <div class="cart__wrap__inner__footer__price">
+                        <div class="cart__wrap__inner__footer__price__title">Общая стоимость:</div>
+                        <span class="cart__wrap__inner__footer__price__number">7 600 ₽</span>
+                    </div>
+                    <a href="order.html" class="cart__wrap__inner__footer__buy">Перейти к оформлению заказа</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="menu" id="menuNav">
+        <div class="menu__inner">
+            <div class="menu__inner__header">
+                <a href="index.html" class="menu__inner__header__link">
+                    <img src="icons/logo.svg" alt="logo" class="menu__inner__logo">
+                </a>
+                <img src="icons/close.svg" alt="close" class="menu__inner__header__close" id="closeMenuBtn">
+            </div>
+            <ul class="menu__inner__accardion">
+                <li class="menu__inner__accardion__item">
+                    <button class="menu__inner__accardion__item__control" aria-expanded="false">
+                        <div class="menu__inner__accardion__item__control__header">
+                            <h3 class="menu__inner__accardion__item__control__header__title">Каталог</h3>
+                        </div>
+                        <img src="icons/arrow-down.svg" alt="icon" class="menu__inner__accardion__item__control__button">
+                    </button>
+                    <div class="menu__inner__accardion__item__content" aria-hidden="true">
+                        <ul class="menu__inner__accardion__item__content__list">
+                            <li class="menu__inner__accardion__item__content__list__item">
+                                <a href="#" class="menu__inner__accardion__item__content__list__item__link">Новинки</a>
+                            </li>
+                            <li class="menu__inner__accardion__item__content__list__item">
+                                <a href="#" class="menu__inner__accardion__item__content__list__item__link">Топ продаж</a>
+                            </li>
+                            <li class="menu__inner__accardion__item__content__list__item">
+                                <a href="#" class="menu__inner__accardion__item__content__list__item__link">Для мужчин</a>
+                            </li>
+                            <li class="menu__inner__accardion__item__content__list__item">
+                                <a href="#" class="menu__inner__accardion__item__content__list__item__link">Для женщин</a>
+                            </li>
+                            <li class="menu__inner__accardion__item__content__list__item">
+                                <a href="#" class="menu__inner__accardion__item__content__list__item__link">Ароматы Trine</a>
+                            </li>
+                            <li class="menu__inner__accardion__item__content__list__item">
+                                <a href="#" class="menu__inner__accardion__item__content__list__item__link">Аромо Box</a>
+                            </li>
+                            <li class="menu__inner__accardion__item__content__list__item">
+                                <a href="#" class="menu__inner__accardion__item__content__list__item__link">Сертификаты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="menu__inner__nav">
+                <li class="menu__inner__nav__item"><a href="about-us.html" class="menu__inner__nav__item__link">О нас</a></li>
+                <li class="menu__inner__nav__item"><a href="delivery.html" class="menu__inner__nav__item__link">Доставка и оплата</a></li>
+                <li class="menu__inner__nav__item"><a href="about-us.html#reviews" class="menu__inner__nav__item__link">Отзывы</a></li>
+                <li class="menu__inner__nav__item"><a href="contacts.html" class="menu__inner__nav__item__link">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
 
 
 
@@ -317,6 +521,25 @@
             });
         });
     });
+    </script>
+
+    <script>
+        var openCartButton = document.getElementById('cartBtn');
+        var closeCartButton = document.getElementById('closeCartBtn');
+        var cart = document.getElementById('cart');
+        var overlay = document.getElementById('cartBg');
+
+        openCartButton.addEventListener('click', function() {
+            cart.classList.add('open-cart');
+            overlay.style.display = 'block';
+            document.body.classList.add('cart-overflow');
+        });
+
+        closeCartButton.addEventListener('click', function() {
+            cart.classList.remove('open-cart');
+            overlay.style.display = 'none';
+            document.body.classList.remove('cart-overflow');
+        });
     </script>
 
 </body>
